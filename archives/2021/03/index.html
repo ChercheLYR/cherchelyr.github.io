@@ -45,14 +45,6 @@
         }
     </style>
     
-    <script src="//cdn1.lncld.net/static/js/3.4.2/av-min.js"></script>
-    <script>
-      AV.init({
-        appId: 'DcXdAxEnjP49A5pYocwf2ecX-gzGzoHsz',
-        appKey: '4CdVvnbkxH3K7bTkJaV0izh4'
-      })
-    </script>
-    
     <!--<script type="text/javascript">
       if (document.images) {
         var avatar = new Image();
@@ -243,6 +235,7 @@ mjx-container[display="true"] + br {
   display: none;
 }
 </style></head>
+
 <body>
     <!-- 背景轮播图功能 -->
     <section class="hidden-xs">
@@ -267,17 +260,18 @@ mjx-container[display="true"] + br {
             </button>
             <a href="https://cherchelyr.github.io">
                 
-                <!-- 这里background使用imgs/${logo_image}(路径文件名) -->
                 <style>
                     #gal-header .navbar-brand {
-                        width: 200px;
-                        height: 50px;
-                        display: block;
-                        background: url('/imgs/logo.png') no-repeat;
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
                     }
                 </style>
-                    
-                <div class="navbar-brand"></div>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">chercheのblog</div>
                 
             </a>
         </div>
@@ -441,18 +435,6 @@ mjx-container[display="true"] + br {
     
     <!-- 要配置好leancloud才能开启此小工具 -->
     
-    <aside id="sidebar-hot_posts">
-    <div class="panel panel-gal hot hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-fire"></i>
-            最热文章
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush"></ul>
-    </div>
-</aside>
-    
     
     <aside id="sidebar-recent_posts">
     <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
@@ -545,7 +527,7 @@ mjx-container[display="true"] + br {
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/analysis/" style="font-size: 8.189316316666268px;" class="tag-cloud-link">analysis</a>
+    <a href="/tags/analysis/" style="font-size: 19.278209784123803px;" class="tag-cloud-link">analysis</a>
     
 </div>
                 
@@ -553,15 +535,15 @@ mjx-container[display="true"] + br {
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
     
     <li>
-        <a href="https://kz16.top/latex/symbol/" target="_blank">Latex</a>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
     </li>
     
     <li>
-        <a href="https://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
     </li>
     
     <li>
-        <a href="https://oeis.org/" target="_blank">Integer Sequence</a>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
     </li>
     
 </div>
@@ -570,15 +552,15 @@ mjx-container[display="true"] + br {
                 <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
     
     <li>
-        <a href="cherchelyr.github.io" target="_blank">Github</a>
+        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
     </li>
     
     <li>
-        <a href="1210693207@qq.com" target="_blank">QQ</a>
+        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
     </li>
     
     <li>
-        <a href="86+ 17784073632" target="_blank">Wechat&amp;PhoneNumber</a>
+        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
     </li>
     
 </div>
@@ -601,6 +583,7 @@ mjx-container[display="true"] + br {
 <div id="gal-gotop">
     <i class="fa fa-angle-up"></i>
 </div>
+    
 </body>
 
 <script src="/js/activate-power-mode.js"></script>
@@ -655,14 +638,6 @@ mjx-container[display="true"] + br {
 <script src="/js/hs.js"></script>
 <script src="/js/blog.js"></script>
 
-
-
-<script>
-    window.hot_posts_count = '10'
-    // window.use_leancloud = 'true'
-</script>
-
-<script src="/js/comment/leancloud.js"></script>
 
 
 
