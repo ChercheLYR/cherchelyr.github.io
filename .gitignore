@@ -7,3 +7,4 @@ public/
 github-deploy-key
 github-deploy-key.pub
 .deploy*/
+package-lock.json
