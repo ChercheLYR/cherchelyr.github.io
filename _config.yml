@@ -102,6 +102,23 @@ include:
 exclude:
 ignore:
 
+
+# 评论系统, 目前只支持gitment(为了自定义样式)
+# 关于gitment如何配置看这篇 https://imsun.net/posts/gitment-introduction/
+# 如果不用的话要把下面的use_comment设置为false
+comment:
+  gitment:
+      owner: cherchelyr # 必填项, 你的GitHub ID
+      repo: cherchelyr.github.io # 必填项  你的存储评论的repo
+      oauth:
+        client_id: f4498c3691a4be156cf4 # 必填项
+        client_secret: 6c3fcfdbb64b7623bb28b2caf535f578df52cf48 # 必填项
+        redirect_uri: # 可以填也可以不填
+
+# 是否使用评论系统
+use_comment: true
+
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
