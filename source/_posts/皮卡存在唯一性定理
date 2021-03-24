@@ -3,11 +3,6 @@ title: test.md
 date: 2021-03-24 13:54:01
 tags: analysis
 ---
----
-title: test.md
-date: 2021-03-24 13:54:01
-tags: analysis
----
 ### 皮卡存在唯一性定理
 #### 1. 定义：
 $Lipschitz$条件：
