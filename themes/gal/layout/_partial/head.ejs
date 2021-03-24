@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="<%= config.author %>">
+    <% if (config.description) { %>
+    <meta name="description" content="<%= config.description %>">
+    <% } %>
+    <% let title = [config.title] %>
+    <% if (page.tag) {
+        title.unshift(`${__('tags')}: ${page.tag}`)
+    } %>
+    <% if (page.category) {
+        title.unshift(`${__('categories')}: ${page.category}`)
+    }%>
+    <% if (page.archive) {
+        title.unshift(`${__('archive_a')}`)
+    }%>
+    <% if (page.title) {
+        title.unshift(`${page.title}`)
+    }%>
+    <title><%= title.join(' | ') %></title>
+    <link href="<%- config.url %>" rel="prefetch" />
+
+    <%- css(['css/bootstrap.min.css', 'css/aos.css' , 'css/style.css']) %>
+    <%- js('js/jquery.min.js') %>
+    <%- js('js/bootstrap.min.js') %>
+    <%- js('js/aos.js') %>
+    <%- js('js/highslide/highslide-full.min.js') %>
+    <%- css('js/highslide/highslide.css') %>
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/<%= theme.xs_bg_image %>');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    <% if(theme.leancloud.appid && theme.leancloud.appkey) { %>
+    <script src="//cdn1.lncld.net/static/js/3.4.2/av-min.js"></script>
+    <script>
+      AV.init({
+        appId: '<%= theme.leancloud.appid %>',
+        appKey: '<%= theme.leancloud.appkey %>'
+      })
+    </script>
+    <% } %>
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '<%- url_for('imgs/' + theme.author_image) %>'
+        var previews = '<%= theme.default_preview %>'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '<%- url_for('imgs/preview') %>' + previews[i]
+        }
+      }
+    </script>-->
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+    />
+    <script
+      async="async"
+      src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+      onload='
+        let pio_container = document.createElement("div");
+        pio_container.classList.add("pio-container");
+        pio_container.classList.add("right");
+        pio_container.style.bottom = "-2rem";
+        pio_container.style.zIndex = "1";
+        document.body.insertAdjacentElement("beforeend", pio_container);
+        let pio_action = document.createElement("div");
+        pio_action.classList.add("pio-action");
+        pio_container.insertAdjacentElement("beforeend", pio_action);
+        let pio_canvas = document.createElement("canvas");
+        pio_canvas.id = "pio";
+        pio_canvas.style.width = "14rem";
+        pio_canvas.width = "1200";
+        pio_canvas.height = "1600";
+        pio_container.insertAdjacentElement("beforeend", pio_canvas);
+        let pio = new Paul_Pio({
+          "mode": "fixed",
+          "hidden": true,
+          "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
+          "content": {
+            "link": ["https:\/\/cherchelyr.github.io"],
+            "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
+            "hidden": true,
+            "custom": [{
+              "selector": "a",
+              "type": "link",
+            }, {
+              "selector": ".sidebar-toggle",
+              "text": "打开侧边栏叭~"
+            }, {
+              "selector": ".effect-info",
+              "text": "哇，你发现了什么！"
+            }, {
+              "selector": "#sidebar-search-input",
+              "text": "想搜索什么呢？很多干货哦！"
+            }, {
+              "selector": "#toc",
+              "text": "这是目录~"
+            }, {
+              "selector": ".page-title",
+              "text": "这是标题~"
+            }, {
+              "selector": ".v",
+              "text": "评论没有审核，要对自己的发言负责哦~"
+            }]
+          },
+          "model": [
+            "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/33/model.2018.bls-winter.json",
+            "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/platelet-2/model.json",
+            "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/xiaomai/xiaomai.model.json",
+            "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/mashiro/seifuku.model.json",
+            "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/Violet/14.json",
+            "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/Kobayaxi/Kobayaxi.model.json",
+            "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/mikoto/mikoto.model.json",
+            "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/uiharu/uiharu.model.json"]
+        });'
+    ></script>
+</head>
