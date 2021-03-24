@@ -11,7 +11,7 @@ jobs:
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           wget https://github.com/jgm/pandoc/releases/download/2.13/pandoc-2.13-1-amd64.deb -O /tmp/pandoc.deb
-          dpkg -i /tmp/pandoc.deb
+          sudo dpkg -i /tmp/pandoc.deb
           npm install
           npm run build
         env:
