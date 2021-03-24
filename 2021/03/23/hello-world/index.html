@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="John Doe">
+    <meta name="author" content="Cherche~">
     
     
     
     
     
     
-    <title>Hello World | Hexo</title>
-    <link href="http://example.com" rel="prefetch" />
+    <title>Hello World | chercheのblog</title>
+    <link href="https://cherchelyr.github.io" rel="prefetch" />
 
     
 <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -43,11 +43,19 @@
         }
     </style>
     
+    <script src="//cdn1.lncld.net/static/js/3.4.2/av-min.js"></script>
+    <script>
+      AV.init({
+        appId: 'DcXdAxEnjP49A5pYocwf2ecX-gzGzoHsz',
+        appKey: '4CdVvnbkxH3K7bTkJaV0izh4'
+      })
+    </script>
+    
     <!--<script type="text/javascript">
       if (document.images) {
         var avatar = new Image();
         avatar.src = '/imgs/avatar.jpg'
-        var previews = 'preview1.jpg,preview4.jpg'.split(',')
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
         var previewsPreLoad = []
         for(var i = 0; i < length; i++) {
           previewsPreLoad.push(new Image())
@@ -75,15 +83,15 @@
         let pio_canvas = document.createElement("canvas");
         pio_canvas.id = "pio";
         pio_canvas.style.width = "14rem";
-        pio_canvas.width = "600";
-        pio_canvas.height = "800";
+        pio_canvas.width = "1200";
+        pio_canvas.height = "1600";
         pio_container.insertAdjacentElement("beforeend", pio_canvas);
         let pio = new Paul_Pio({
           "mode": "fixed",
           "hidden": true,
           "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
           "content": {
-            "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
+            "link": ["https:\/\/cherchelyr.github.io"],
             "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
             "hidden": true,
             "custom": [{
@@ -143,20 +151,19 @@
                     aria-expanded="false">
                 <span class="fa fa-lg fa-reorder"></span>
             </button>
-            <a href="http://example.com">
+            <a href="https://cherchelyr.github.io">
                 
+                <!-- 这里background使用imgs/${logo_image}(路径文件名) -->
                 <style>
                     #gal-header .navbar-brand {
-                        height: 54px;
-                        line-height: 24px;
-                        font-size: 28px;
-                        opacity: 1;
-                        background-color: rgba(0,0,0,0);
-                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                        width: 200px;
+                        height: 50px;
+                        display: block;
+                        background: url('/imgs/logo.png') no-repeat;
                     }
                 </style>
-                <!-- 这里使用文字(navbar_text or config.title) -->
-                <div class="navbar-brand">Hexo</div>
+                    
+                <div class="navbar-brand"></div>
                 
             </a>
         </div>
@@ -219,7 +226,7 @@
 <article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
-        <a href="http://example.com">Hexo</a>
+        <a href="https://cherchelyr.github.io">chercheのblog</a>
         >
         <span>Hello World</span>
     </div>
@@ -234,6 +241,10 @@
             
             <span class="label label-gal">
                 <i class="fa fa-calendar"></i> 2021-03-23
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
             </span>
             
         </div>
@@ -251,6 +262,8 @@
             </p>
             <p>
                 
+                
+                <i class="fa fa-eye"></i>
                 
             </p>
         </center>
@@ -274,6 +287,15 @@
 </article>
 
 
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'Hello World'
+    }
+</script>
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -292,7 +314,7 @@
     <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
         <div class="panel-heading" style="text-align: center">
             <i class="fa fa-quote-left"></i>
-            John Doe
+            Cherche~
             <i class="fa fa-quote-right"></i>
         </div>
         <div class="author-panel text-center">
@@ -316,6 +338,18 @@
 </aside>
     
     <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    <aside id="sidebar-hot_posts">
+    <div class="panel panel-gal hot hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-fire"></i>
+            最热文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
     
     
     <aside id="sidebar-recent_posts">
@@ -371,6 +405,10 @@
                 </li>
                 
                 
+                <li>
+                    <a href="/2021/03/23/hello-world/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
                 
                 <li>
                     <a href="/2021/03/23/hello-world/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
@@ -384,6 +422,22 @@
 </div>
                 
                 
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="https://kz16.top/latex/symbol/" target="_blank">Latex</a>
+    </li>
+    
+    <li>
+        <a href="https://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a>
+    </li>
+    
+    <li>
+        <a href="https://oeis.org/" target="_blank">Integer Sequence</a>
+    </li>
+    
+</div>
+                
                 
                 <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
     
@@ -392,11 +446,11 @@
     </li>
     
     <li>
-        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+        <a href="1210693207@qq.com" target="_blank">QQ</a>
     </li>
     
     <li>
-        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+        <a href="86+ 17784073632" target="_blank">Wechat&amp;PhoneNumber</a>
     </li>
     
 </div>
@@ -411,7 +465,7 @@
     </div>
     <footer id="gal-footer">
     <div class="container">
-        Copyright © 2018 John Doe Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+        Copyright © 2018 Cherche~ Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
     </div>
 </footer>
 
@@ -474,6 +528,38 @@
 <script src="/js/blog.js"></script>
 
 
+
+<script>
+    window.hot_posts_count = '10'
+    // window.use_leancloud = 'true'
+</script>
+
+<script src="/js/comment/leancloud.js"></script>
+
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Tue Mar 23 2021 19:06:59 GMT+0800'
+      window.commentConfig.owner = 'cherchelyr'
+      window.commentConfig.repo = 'https://github.com/ChercheLYR/cherchelyr.github.io'
+      window.commentConfig.client_id = 'f4498c3691a4be156cf4'
+      window.commentConfig.client_secret = 'cf3e8fd0e758b311751d1b8c0fdb6e79cbabba35'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Tue Mar 23 2021 19:06:59 GMT+0800',
+        owner: 'cherchelyr',
+        repo: 'https://github.com/ChercheLYR/cherchelyr.github.io',
+        client_id: 'f4498c3691a4be156cf4',
+        client_secret: 'cf3e8fd0e758b311751d1b8c0fdb6e79cbabba35',
+        redirect_uri: ''
+      }
+    }
+</script>
+
+<script src="/js/comment/gitment.js"></script>
 
 
 </html>
