@@ -260,18 +260,17 @@ mjx-container[display="true"] + br {
             </button>
             <a href="https://cherchelyr.github.io">
                 
+                <!-- 这里background使用imgs/${logo_image}(路径文件名) -->
                 <style>
                     #gal-header .navbar-brand {
-                        height: 54px;
-                        line-height: 24px;
-                        font-size: 28px;
-                        opacity: 1;
-                        background-color: rgba(0,0,0,0);
-                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                        width: 200px;
+                        height: 50px;
+                        display: block;
+                        background: url('/imgs/logo.png') no-repeat;
                     }
                 </style>
-                <!-- 这里使用文字(navbar_text or config.title) -->
-                <div class="navbar-brand">chercheのblog</div>
+                    
+                <div class="navbar-brand"></div>
                 
             </a>
         </div>
@@ -404,7 +403,7 @@ mjx-container[display="true"] + br {
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/24/hello-world/">Hello World</a>
+                    <a href="/2021/03/25/hello-world/">Hello World</a>
                 </span>
             </li>
             
@@ -438,7 +437,7 @@ mjx-container[display="true"] + br {
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/24/hello-world/">Hello World</a>
+                    <a href="/2021/03/25/hello-world/">Hello World</a>
                 </span>
             </li>
             
@@ -478,12 +477,17 @@ mjx-container[display="true"] + br {
                     <a href="/404/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
+                
+                <li>
+                    <a href="/404/index.html#sidebar-reword-links" data-toggle="tab" id="reword-links-tab">打赏</a>
+                </li>
+                
             </ul>
             <div class="tab-content">
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/analysis/" style="font-size: 18.627724695843458px;" class="tag-cloud-link">analysis</a>
+    <a href="/tags/analysis/" style="font-size: 19.974603044716698px;" class="tag-cloud-link">analysis</a>
     
 </div>
                 
@@ -491,15 +495,19 @@ mjx-container[display="true"] + br {
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
     
     <li>
-        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+        <a href="https://www.latexlive.com/" target="_blank">Latex</a>
     </li>
     
     <li>
-        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+        <a href="https://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a>
     </li>
     
     <li>
-        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+        <a href="https://oeis.org/" target="_blank">Integer Sequence</a>
+    </li>
+    
+    <li>
+        <a href="https://echarts.apache.org/examples/zh/index.html#chart-type-scatter" target="_blank">Apache ECharts</a>
     </li>
     
 </div>
@@ -508,15 +516,28 @@ mjx-container[display="true"] + br {
                 <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
     
     <li>
-        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+        <a href="https://github.com/ChercheLYR/" target="_blank">Github</a>
     </li>
     
     <li>
-        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+        <a href="https://img.vim-cn.com/b9/3173968fccc854eba6a07d8c69143300e12b66.jpg" target="_blank">Wechat</a>
     </li>
     
     <li>
-        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+        <a href="1210693207@qq.com" target="_blank">邮箱</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="reword-links tab-pane nav bs-sidenav fade" id="sidebar-reword-links">
+    
+    <li>
+        <a href="https://img.vim-cn.com/5a/42a10b98e7349f3c31642c68784b959d02b793.jpg" target="_blank">WeChat</a>
+    </li>
+    
+    <li>
+        <a href="https://img.vim-cn.com/2f/104534221789f18fa81d7374f3c684f1e603ad.jpg" target="_blank">Alipay</a>
     </li>
     
 </div>
@@ -531,7 +552,7 @@ mjx-container[display="true"] + br {
     </div>
     <footer id="gal-footer">
     <div class="container">
-        Copyright © 2018 Cherche~ Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+        Copyright © 2021 Cherche~ Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/AONOSORA" target="_blank">AONOSORA</a>
     </div>
 </footer>
 
