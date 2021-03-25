@@ -14,7 +14,7 @@
     <% if(theme.sidebar.random_posts) { %>
     <%- partial('_widget/random_posts') %>
     <% } %>
-    <% if(theme.sidebar.tags === true || theme.sidebar.friend_links === true || theme.sidebar.links === true) { %>
+    <% if(theme.sidebar.tags === true || theme.sidebar.friend_links === true || theme.sidebar.links === true || theme.sidebar.reword_links === true) { %>
     <aside id="gal-sets">
         <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
             <ul class="nav nav-pills pills-gal">
@@ -34,6 +34,11 @@
                     <a href="<%- url_for(path) %>#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 <% } %>
+                <% if(theme.sidebar.reword_links === true) { %>
+                <li>
+                    <a href="<%- url_for(path) %>#sidebar-reword-links" data-toggle="tab" id="reword-links-tab">打赏</a>
+                </li>
+                <% } %>
             </ul>
             <div class="tab-content">
                 <% if (theme.sidebar.tags === true) { %>
@@ -44,6 +49,9 @@
                 <% } %>
                 <% if (theme.sidebar.links === true) { %>
                 <%- partial('_widget/links') %>
+                <% } %>
+                <% if (theme.sidebar.reword_links === true) { %>
+                <%- partial('_widget/reword_links') %>
                 <% } %>
             </div>
         </div>

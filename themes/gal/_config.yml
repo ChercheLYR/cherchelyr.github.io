@@ -1,6 +1,6 @@
 # use_logo如果为true, 需要在logo_image设置路径
-use_logo: false
-logo_image:  # 使用路径, 填写文件名即可(比如, logo_image: logo.png 指向 source/imgs/logo.png)
+use_logo: true
+logo_image: logo.png # 使用路径, 填写文件名即可(比如, logo_image: logo.png 指向 source/imgs/logo.png)
 navbar_text: # 如果没有Logo, 则设置为false, 并且设置navbar_text(否则默认为站点标题, 最好进行设置)
 
 # 必填, 设定小型设备展示背景图, 指向source/imgs, 比如xs_bg_image: bg.png -> source/imgs/bg.png
@@ -62,24 +62,35 @@ sidebar:
   tags: true              # 热门标签, 默认开启
   friend_links: true      # 友情链接, 默认开启
   links: true             # 个人链接, 默认开启
-
+  reword_links: true      # 打赏链接, 默认开启
+  
 # 友情链接配置, 要先开启上面的friend_links
 friend_links:
-  - name: KDays Forum
-    link: http://kdays.net/days/
-  - name: 绅士导航♂
-    link: http://www.gal123.com/
-  - name: 萌导航
-    link: http://www.moe123.com/
+  - name: Latex
+    link: https://www.latexlive.com/
+  - name: Wolfram Alpha
+    link: https://www.wolframalpha.com/
+  - name: Integer Sequence
+    link: https://oeis.org/
+  - name: Apache ECharts
+    link: https://echarts.apache.org/examples/zh/index.html#chart-type-scatter
+
 
 # 个人链接配置, 要先开启上面的links
 links:
   - name: Github
-    link: https://github.com/ZEROKISEKI/
-  - name: Coding
-    link: https://coding.net/u/SORA1
-  - name: 知乎
-    link: https://www.zhihu.com/people/aonosora/activities
+    link: https://github.com/ChercheLYR/
+  - name: Wechat
+    link: https://img.vim-cn.com/b9/3173968fccc854eba6a07d8c69143300e12b66.jpg
+  - name: 邮箱
+    link: 1210693207@qq.com
+    
+# 这是打赏
+reword_links:
+  - name: WeChat
+    link: https://img.vim-cn.com/5a/42a10b98e7349f3c31642c68784b959d02b793.jpg
+  - name: Alipay
+    link: https://img.vim-cn.com/2f/104534221789f18fa81d7374f3c684f1e603ad.jpg
 
 
 # 是否使用公告
