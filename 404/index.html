@@ -45,11 +45,19 @@
         }
     </style>
     
+    <script src="//cdn1.lncld.net/static/js/3.4.2/av-min.js"></script>
+    <script>
+      AV.init({
+        appId: 'DcXdAxEnjP49A5pYocwf2ecX-gzGzoHsz',
+        appKey: '4CdVvnbkxH3K7bTkJaV0izh4'
+      })
+    </script>
+    
     <!--<script type="text/javascript">
       if (document.images) {
         var avatar = new Image();
         avatar.src = '/imgs/avatar.jpg'
-        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg,preview5.jpg,preview6.jpg,preview7.jpg,preview8.jpg,preview9.jpg,preview10.jpg'.split(',')
         var previewsPreLoad = []
         for(var i = 0; i < length; i++) {
           previewsPreLoad.push(new Image())
@@ -390,6 +398,18 @@ mjx-container[display="true"] + br {
     
     <!-- 要配置好leancloud才能开启此小工具 -->
     
+    <aside id="sidebar-hot_posts">
+    <div class="panel panel-gal hot hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-fire"></i>
+            最热文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
     
     <aside id="sidebar-recent_posts">
     <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
@@ -403,7 +423,7 @@ mjx-container[display="true"] + br {
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/25/hello-world/">Hello World</a>
+                    <a href="/2021/03/26/hello-world/">Hello World</a>
                 </span>
             </li>
             
@@ -437,7 +457,7 @@ mjx-container[display="true"] + br {
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/25/hello-world/">Hello World</a>
+                    <a href="/2021/03/26/hello-world/">Hello World</a>
                 </span>
             </li>
             
@@ -487,7 +507,7 @@ mjx-container[display="true"] + br {
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/analysis/" style="font-size: 19.49419614573513px;" class="tag-cloud-link">analysis</a>
+    <a href="/tags/analysis/" style="font-size: 10.932079880327308px;" class="tag-cloud-link">analysis</a>
     
 </div>
                 
@@ -524,7 +544,7 @@ mjx-container[display="true"] + br {
     </li>
     
     <li>
-        <a href="1210693207@qq.com" target="_blank">邮箱</a>
+        <a href="https://img.vim-cn.com/f7/52587b3bd8ef66181c673e0bf5958976dea664.png" target="_blank">邮箱</a>
     </li>
     
 </div>
@@ -617,5 +637,41 @@ mjx-container[display="true"] + br {
 
 
 
+<script>
+    window.hot_posts_count = '10'
+    // window.use_leancloud = 'true'
+</script>
+
+<script src="/js/comment/leancloud.js"></script>
+
+
+
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Wed Mar 24 2021 12:50:21 GMT+0000'
+      window.commentConfig.owner = 'cherchelyr'
+      window.commentConfig.repo = 'comment'
+      window.commentConfig.client_id = 'f4498c3691a4be156cf4'
+      window.commentConfig.client_secret = '6c3fcfdbb64b7623bb28b2caf535f578df52cf48'
+      window.commentConfig.redirect_uri = ''
+      window.commentConfig.proxy = 'https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token'
+    } else {
+      window.commentConfig = {
+      	id: 'Wed Mar 24 2021 12:50:21 GMT+0000',
+        owner: 'cherchelyr',
+        repo: 'comment',
+        client_id: 'f4498c3691a4be156cf4',
+        client_secret: '6c3fcfdbb64b7623bb28b2caf535f578df52cf48',
+        redirect_uri: '',
+        proxy: 'https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token'
+      }
+    }
+</script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    
+<script src="/js/comment/gitalk.js"></script>
+
+  
 
 </html>

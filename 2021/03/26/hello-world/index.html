@@ -45,11 +45,19 @@
         }
     </style>
     
+    <script src="//cdn1.lncld.net/static/js/3.4.2/av-min.js"></script>
+    <script>
+      AV.init({
+        appId: 'DcXdAxEnjP49A5pYocwf2ecX-gzGzoHsz',
+        appKey: '4CdVvnbkxH3K7bTkJaV0izh4'
+      })
+    </script>
+    
     <!--<script type="text/javascript">
       if (document.images) {
         var avatar = new Image();
         avatar.src = '/imgs/avatar.jpg'
-        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg,preview5.jpg,preview6.jpg,preview7.jpg,preview8.jpg,preview9.jpg,preview10.jpg'.split(',')
         var previewsPreLoad = []
         for(var i = 0; i < length; i++) {
           previewsPreLoad.push(new Image())
@@ -353,13 +361,17 @@ mjx-container[display="true"] + br {
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2021/03/25/hello-world/">Hello World</a>
+                <a href="/2021/03/26/hello-world/">Hello World</a>
             </h1>
         </div>
         <div class="tag-article">
             
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2021-03-25
+                <i class="fa fa-calendar"></i> 2021-03-26
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
             </span>
             
         </div>
@@ -369,14 +381,16 @@ mjx-container[display="true"] + br {
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2021/03/25/hello-world/">Hello World</a>
+                    <a href="/2021/03/26/hello-world/">Hello World</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2021-03-25
+                <i class="fa fa-calendar"></i> 2021-03-26
             </p>
             <p>
                 
+                
+                <i class="fa fa-eye"></i>
                 
             </p>
         </center>
@@ -400,6 +414,15 @@ mjx-container[display="true"] + br {
     </div>
 </article>
 
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'Hello World'
+    }
+</script>
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -445,6 +468,18 @@ mjx-container[display="true"] + br {
     
     <!-- 要配置好leancloud才能开启此小工具 -->
     
+    <aside id="sidebar-hot_posts">
+    <div class="panel panel-gal hot hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-fire"></i>
+            最热文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
     
     <aside id="sidebar-recent_posts">
     <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
@@ -458,7 +493,7 @@ mjx-container[display="true"] + br {
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/25/hello-world/">Hello World</a>
+                    <a href="/2021/03/26/hello-world/">Hello World</a>
                 </span>
             </li>
             
@@ -492,7 +527,7 @@ mjx-container[display="true"] + br {
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/25/hello-world/">Hello World</a>
+                    <a href="/2021/03/26/hello-world/">Hello World</a>
                 </span>
             </li>
             
@@ -519,22 +554,22 @@ mjx-container[display="true"] + br {
 
                 
                 <li>
-                    <a href="/2021/03/25/hello-world/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2021/03/26/hello-world/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2021/03/25/hello-world/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2021/03/26/hello-world/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2021/03/25/hello-world/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2021/03/26/hello-world/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2021/03/25/hello-world/index.html#sidebar-reword-links" data-toggle="tab" id="reword-links-tab">打赏</a>
+                    <a href="/2021/03/26/hello-world/index.html#sidebar-reword-links" data-toggle="tab" id="reword-links-tab">打赏</a>
                 </li>
                 
             </ul>
@@ -542,7 +577,7 @@ mjx-container[display="true"] + br {
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/analysis/" style="font-size: 13.175304240900706px;" class="tag-cloud-link">analysis</a>
+    <a href="/tags/analysis/" style="font-size: 10.98452816072443px;" class="tag-cloud-link">analysis</a>
     
 </div>
                 
@@ -579,7 +614,7 @@ mjx-container[display="true"] + br {
     </li>
     
     <li>
-        <a href="1210693207@qq.com" target="_blank">邮箱</a>
+        <a href="https://img.vim-cn.com/f7/52587b3bd8ef66181c673e0bf5958976dea664.png" target="_blank">邮箱</a>
     </li>
     
 </div>
@@ -672,5 +707,41 @@ mjx-container[display="true"] + br {
 
 
 
+<script>
+    window.hot_posts_count = '10'
+    // window.use_leancloud = 'true'
+</script>
+
+<script src="/js/comment/leancloud.js"></script>
+
+
+
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Fri Mar 26 2021 15:39:30 GMT+0000'
+      window.commentConfig.owner = 'cherchelyr'
+      window.commentConfig.repo = 'comment'
+      window.commentConfig.client_id = 'f4498c3691a4be156cf4'
+      window.commentConfig.client_secret = '6c3fcfdbb64b7623bb28b2caf535f578df52cf48'
+      window.commentConfig.redirect_uri = ''
+      window.commentConfig.proxy = 'https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token'
+    } else {
+      window.commentConfig = {
+      	id: 'Fri Mar 26 2021 15:39:30 GMT+0000',
+        owner: 'cherchelyr',
+        repo: 'comment',
+        client_id: 'f4498c3691a4be156cf4',
+        client_secret: '6c3fcfdbb64b7623bb28b2caf535f578df52cf48',
+        redirect_uri: '',
+        proxy: 'https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token'
+      }
+    }
+</script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    
+<script src="/js/comment/gitalk.js"></script>
+
+  
 
 </html>
