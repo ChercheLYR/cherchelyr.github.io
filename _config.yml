@@ -8,7 +8,7 @@ subtitle: 'mathematical time'
 description: ' '
 keywords: mathematics
 author: Cherche~
-language: en
+language: Zh-CN
 timezone: ''
 
 # URL
@@ -31,7 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 mathjax:
-  tags: none # or 'ams' or 'all'
+  tags: all # or 'ams' or 'all'
   single_dollars: true # enable single dollar signs as in-line math delimiters
   cjk_width: 0.9 # relative CJK char width
   normal_width: 0.6 # relative normal (monospace) width
@@ -109,7 +109,7 @@ ignore:
 comment:
   gitment:
       owner: cherchelyr # 必填项, 你的GitHub ID
-      repo: cherchelyr.github.io # 必填项  你的存储评论的repo
+      repo: comment # 必填项  你的存储评论的repo
       oauth:
         client_id: f4498c3691a4be156cf4 # 必填项
         client_secret: 6c3fcfdbb64b7623bb28b2caf535f578df52cf48 # 必填项

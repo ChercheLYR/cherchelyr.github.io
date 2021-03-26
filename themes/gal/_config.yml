@@ -52,6 +52,13 @@ default_preview:
   - preview2.jpg
   - preview3.jpg
   - preview4.jpg
+  - preview5.jpg
+  - preview6.jpg
+  - preview7.jpg
+  - preview8.jpg
+  - preview9.jpg
+  - preview10.jpg
+
 
 # 侧边栏
 sidebar:
@@ -83,7 +90,7 @@ links:
   - name: Wechat
     link: https://img.vim-cn.com/b9/3173968fccc854eba6a07d8c69143300e12b66.jpg
   - name: 邮箱
-    link: 1210693207@qq.com
+    link: https://img.vim-cn.com/f7/52587b3bd8ef66181c673e0bf5958976dea664.png
     
 # 这是打赏
 reword_links:
@@ -151,34 +158,34 @@ power_mode:
 # 获取appId和appKey方法直接百度 or google(或者看这篇http://crescentmoon.info/2014/12/11/popular-widget/)
 # 注意一旦生成新的文章就不要随便改名了
 leancloud:
-  appid:  # yourappId
-  appkey: # your appKeym
+  appid: DcXdAxEnjP49A5pYocwf2ecX-gzGzoHsz # yourappId
+  appkey: 4CdVvnbkxH3K7bTkJaV0izh4 # your appKeym
 
 # 评论系统, 目前只支持gitment(为了自定义样式)
 # 关于gitment如何配置看这篇 https://imsun.net/posts/gitment-introduction/
 # 如果不用的话要把下面的use_comment设置为false
 comment:
   gitment:
-      owner: # 必填项, 你的GitHub ID
-      repo: # 必填项  你的存储评论的repo
+      owner: cherchelyr # 必填项, 你的GitHub ID
+      repo: comment # 必填项  你的存储评论的repo
       oauth:
-        client_id:  # 必填项
-        client_secret: # 必填项
+        client_id: f4498c3691a4be156cf4 # 必填项
+        client_secret: 6c3fcfdbb64b7623bb28b2caf535f578df52cf48 # 必填项
         redirect_uri: # 可以填也可以不填
   # 是否改成gitalk, gitment的必填项也是要填的
   gitalk:
-    change_to_gitalk: false
+    change_to_gitalk: true
     # 出现403错误, 增加proxy, default: https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token
     # 具体讨论: https://github.com/gitalk/gitalk/issues/429
     proxy: https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token
 
 # 是否使用评论系统
-use_comment: false
+use_comment: true
 
 node_sass:
   outputStyle: compressed
   precision: 5
-  sourceComments: false
+  sourceComments: true
 
 # 是否添加live2d
 # 项目地址: https://github.com/stevenjoezhang/live2d-widget
