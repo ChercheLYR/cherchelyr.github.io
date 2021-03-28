@@ -110,7 +110,7 @@ for some constant $C>0$.
 &emsp; We calculate $L_N$ straitly:
 $$
 \begin{align}
-  \int_{-\pi }^{\pi }{\left| {{D}_{N}}\left( x \right) \right|dx}&=2\int_{0}^{\pi }{\left| {{D}_{N}}\left( x \right) \right|dx} \\ 
+  \int_{-\pi }^{\pi }{\left| {D}_{N}\left( x \right) \right|dx}&=2\int_{0}^{\pi }{\left| {D}_{N}\left( x \right) \right|dx} \\
  & =2\int_{0}^{\pi }{\left| \frac{\sin \left( N+\frac{1}{2} \right)x}{\sin \frac{x}{2}} \right|dx} \\ 
  & \ge 4\int_{0}^{N\pi }{\left| \frac{\sin x}{x} \right|dx} + O(1)\\ 
  & =4\sum\limits_{k=0}^{N-1}{\int_{k\pi }^{\left( k+1 \right)\pi }{\left| \frac{\sin x}{x} \right|dx}} + O(1)\\ 
