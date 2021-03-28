@@ -6,7 +6,6 @@ tags:
   - Dirichlet kernel
 categories: Fourier Analysis
 ---
-
 # Fourier Analysis
 
 ### Problem 1
@@ -31,7 +30,7 @@ $\forall \delta > 0$, when $|x-r_n| < \delta$, we can find $r_m$ is between $x$ 
 $$
 |F(x)-F(r_n)|>|F(r_m)-F(r_n)|=\left |\sum_{k=1}^{\infty} \dfrac{1}{k^2}[f(r_n-r_k)-f(r_m-r_k)]\right | =C_{n,m}>0
 $$
-$C_{n,m}$ is a constant(If we fixed $m$ and $n$). That is $F(x)$ is discontinuous at all points $x=r_n$. 
+Where $C_{n,m}$ is a constant(If we fix $m$ and $n$). That is $F(x)$ is discontinuous at all points $x=r_n$. 
 
 $(\#)$
 
@@ -46,6 +45,33 @@ where $g(x)=\sin{\dfrac{1}{x}}$ when $x\neq0$, and $g(0)=0$. Then $F$ is integra
 Proof: 
 
 &emsp; Note that $g(x)$ is bounded, and the geometric series $\sum 3^{-n}$ is convergence. So $F(x)$ is bounded. 
+
+Next, we discuss the integrability of $F(x)$.  Denote 
+$$
+\mathcal{U}=\sum_{j=1}^{N}{\left[\sup_{x_{j-1} \leq x \leq x_j}\left\{\sum_{n=1}^{\infty} 3^{-n}g(x-r_n)\right\}\right](x_j-x_{j-1})}
+$$
+
+$$
+\mathcal{L}=\sum_{j=1}^{N}{\left[\inf_{x_{j-1} \leq x \leq x_j}\left\{\sum_{n=1}^{\infty} 3^{-n}g(x-r_n)\right\}\right](x_j-x_{j-1})}
+$$
+
+Then,
+$$
+\mathcal{U-L}=\sum_{j=1}^{N}{\omega_j(x)(x_j-x_{j-1})}
+$$
+
+$$
+\begin{align}
+\omega_j(x)&=\sup_{x_1,x_2\in[x_{j-1},x_{j}]}{\left|F(x_1)-F(x_2)\right|}\\
+&=\sum_{n=1}^{\infty}{3^{-n}\sup_{x_1,x_2\in[x_{j-1},x_{j}]}}{\left|g(x_1-r_n)-g(x_2-r_n)\right|}
+\end{align}
+$$
+
+So, we prove that there is at most countable $\omega_j(x) > 0$ as $N\to \infty$. 
+
+
+
+
 
 
 
@@ -65,7 +91,7 @@ Proof:
 
 &emsp; Let $D_N$ denote the Dirichlet kernel
 $$
-D_N(\theta)=\sum_{k=-N}^{N}e^{ik\theta}=\dfrac{\sin(\dfrac{N+1}{2} \theta)}{\sin\dfrac{\theta}{2}}
+D_N(\theta)=\sum_{k=-N}^{N}e^{ik\theta}=\dfrac{\sin\left(N+\dfrac{1}{2} \theta\right)}{\sin\dfrac{\theta}{2}}
 $$
 
 
@@ -79,6 +105,38 @@ L_N \geq c\log N
 $$
 for some constant $c>0$. 
 
+&emsp; Proof:
+
+&emsp; We calculate $L_N$ straitly:
+$$
+\begin{align}
+  \int_{-\pi }^{\pi }{\left| {{D}_{N}}\left( x \right) \right|dx}&=2\int_{0}^{\pi }{\left| {{D}_{N}}\left( x \right) \right|dx} \\ 
+ & =2\int_{0}^{\pi }{\left| \frac{\sin \left( N+\frac{1}{2} \right)x}{\sin \frac{x}{2}} \right|dx} \\ 
+ & \ge 4\int_{0}^{N\pi }{\left| \frac{\sin x}{x} \right|dx} + O(1)\\ 
+ & =4\sum\limits_{k=0}^{N-1}{\int_{k\pi }^{\left( k+1 \right)\pi }{\left| \frac{\sin x}{x} \right|dx}} + O(1)\\ 
+ & \ge 4\sum\limits_{k=1}^{N-1}{2\frac{1}{k+1}} +O(1) \\ 
+ & \ge C\log N  
+\end{align}
+$$
+The last inequality is used Euler's formula
+$$
+\sum_{k=1}^{n}{\dfrac{1}{k}}=\log n + \gamma_n
+$$
+Where $\gamma_n$ is Euler constant. 
+
+&emsp; A more careful estimate gives
+$$
+L_N \ge \dfrac{4}{\pi^2} \log N +O(1)
+$$
+
+
 &emsp; (b)Prove the following as consequence: for each $n\geq 1$, there exists a continuous function $f_n$ such that $\left|f_n \right|<1$ and $\left| S_n(f_n)(0)\right| \geq c' \log n$. 
+
+
+
+
+
+
+
 
 
