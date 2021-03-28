@@ -101,9 +101,9 @@ L_N=\dfrac{1}{2\pi}\int_{-\pi}^{\pi}\left|D_N(\theta)\right|d\theta
 $$
 &emsp; (a)Prove that 
 $$
-L_N \geq c\log N
+L_N \geq C\log N
 $$
-for some constant $c>0$. 
+for some constant $C>0$. 
 
 &emsp; Proof:
 
@@ -131,19 +131,3 @@ $$
 
 
 &emsp; (b)Prove the following as consequence: for each $n\geq 1$, there exists a continuous function $f_n$ such that $\left|f_n \right|<1$ and $\left| S_n(f_n)(0)\right| \geq c' \log n$. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
