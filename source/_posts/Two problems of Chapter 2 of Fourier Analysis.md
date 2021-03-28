@@ -48,11 +48,11 @@ Proof:
 
 Next, we discuss the integrability of $F(x)$.  Denote 
 $$
-\mathcal{U}=\sum_{j=1}^{N}{\left\[\sup_{x_{j-1} \leq x \leq x_j}\left\{\sum_{n=1}^{\infty} 3^{-n}g(x-r_n)\right\}\right\](x_j-x_{j-1})}
+\mathcal{U}=\sum_{j=1}^{N}{\left[\sup_{x_{j-1} \leq x \leq x_j}\left\{\sum_{n=1}^{\infty} 3^{-n}g(x-r_n)\right\}\right](x_j-x_{j-1})}
 $$
 
 $$
-\mathcal{L}=\sum_{j=1}^{N}{\left\[\inf_{x_{j-1} \leq x \leq x_j}\left\{\sum_{n=1}^{\infty} 3^{-n}g(x-r_n)\right\}\right\](x_j-x_{j-1})}
+\mathcal{L}=\sum_{j=1}^{N}{\left[\inf_{x_{j-1} \leq x \leq x_j}\left\{\sum_{n=1}^{\infty} 3^{-n}g(x-r_n)\right\}\right](x_j-x_{j-1})}
 $$
 
 Then,
@@ -131,6 +131,13 @@ $$
 
 
 &emsp; (b)Prove the following as consequence: for each $n\geq 1$, there exists a continuous function $f_n$ such that $\left|f_n \right|<1$ and $\left| S_n(f_n)(0)\right| \geq c' \log n$. 
+
+
+
+
+
+
+
 
 
 
