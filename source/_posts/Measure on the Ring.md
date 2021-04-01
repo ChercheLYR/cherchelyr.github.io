@@ -26,7 +26,7 @@ In particular, if we have $X \in \mathcal{R}$, we called $\mathcal{R}$ is a $\si
 
 **Definition 3:**
 
-Let $\mathcal{E}$ is a set class on $X$, and define the map from  $\mathcal{E}$  to $X$: 
+Let $\mathcal{E}$ is a set class on $X$, and define the mapping from  $\mathcal{E}$  to $X$: 
 $$
 \mu : \mathcal{E}\to \mathbb{R}
 $$
