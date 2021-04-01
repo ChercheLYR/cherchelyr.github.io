@@ -82,15 +82,15 @@ In addition, if $\mathcal{R}$ is a $\sigma \text{-Ring}$, we have:
 $$
 \mu\left(\lim\inf_{n}E_n\right) \le \lim\inf_{n}\mu(E_n)
 $$
-&emsp; viii>. If $E_n \in \mathcal{R}$, $ n=1,2,...$, and $\exists k \in \mathbb{N}$ such that $\bigcup_{n=k}^{\infty}E_n < \infty $, then
+&emsp; viii>. If $E_n \in \mathcal{R}$, $ n=1,2,...$, and $\exists k \in \mathbb{N}$, such that $\bigcup_{n=k}^{\infty}E_n < \infty$, then
 $$
 \mu\left(\lim\sup_{n}E_n\right) \ge \lim\sup_{n}\mu(E_n)
 $$
-&emsp; ix>. If $E_n \in \mathcal{R}$, $ n=1,2,...$, $\lim E_n$ exists and $\exists k \in \mathbb{N}$ such that $\bigcup_{n=k}^{\infty}E_n < \infty $, then
+&emsp; ix>. If $E_n \in \mathcal{R}$, $ n=1,2,...$, $\lim E_n$ exists and $\exists k \in \mathbb{N}$ such that $\bigcup_{n=k}^{\infty}E_n < \infty$, then
 $$
 \mu\left(\lim_{n\to \infty}E_n\right) = \lim_{n\to \infty}\mu(E_n)
 $$
-&emsp; x. If $E_n \in \mathcal{R}$, $ n=1,2,...$, and $\exists k \in \mathbb{N}$ such that $\sum_{n=k}^{\infty}\mu(E_n) < \infty $, then
+&emsp; x. If $E_n \in \mathcal{R}$, $ n=1,2,...$, and $\exists k \in \mathbb{N}$ such that $\sum_{n=k}^{\infty}\mu(E_n) < \infty$, then
 $$
 \mu\left(\lim\sup_{n}E_n\right) = 0
 $$
