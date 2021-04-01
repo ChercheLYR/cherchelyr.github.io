@@ -19,6 +19,7 @@
 				counter.save({
 					fetchWhenSave: true
 				})
+				counter.set('title', title)
 				counter.increment('time')
 				counter.save().then(function (counter) {
 				}).then(function (counter, error) {
