@@ -1,13 +1,16 @@
+---
 title: Measure on the Ring
-date: 2021-04-01 22:13:11
+date: 2021-04-01 22:25:11
 tags:
   - Real Analysis
   - Definition
   - Theorem
 categories: Real Analysis
+---
+
 **Definition 1**:
 
-Let $X$ is a fixed set(or a Basic Space), and denote $\mathcal{E} := \left\{ E:E\sub X \right\}$. Call $\mathcal{E}$ is a **set class** on $X$. 
+Let $X$ is a fixed set(or a Basic Space), and denote $\mathcal{E} := \left\{ E:E\subset X \right\}$. Call $\mathcal{E}$ is a **set class** on $X$. 
 
 
 
@@ -53,19 +56,19 @@ If  $\mathcal{R}$ is a Ring on $X$, and $\mu$ is a **measure** on $\mathcal{R}$,
 $$
 \mu \left(\bigcup_{i=1}^{n}E_n \right) =\sum_{i=1}^{n}\mu(E_n)
 $$
-&emsp; ii>. (Monotonicity) If $E_1,E_2 \in \mathcal{R}$, and $E_1\sub E_2$, then 
+&emsp; ii>. (Monotonicity) If $E_1,E_2 \in \mathcal{R}$, and $E_1\subset E_2$, then 
 $$
 \mu(E_1) \le \mu(E_2)
 $$
-&emsp; iii>. (Reducibility) If $E_1,E_2 \in \mathcal{R}$, $E_1\sub E_2$, and $\mu(E_1) \le \infty$, then
+&emsp; iii>. (Reducibility) If $E_1,E_2 \in \mathcal{R}$, $E_1\subset E_2$, and $\mu(E_1) \le \infty$, then
 $$
 \mu(E_2-E_1)=\mu(E_2)-\mu(E_1)
 $$
-&emsp; iv>. (Secondary additivity) If $E_n,E \in \mathcal{R}$, $n=1,2,...$, and $E\sub \bigcup_{n=1}^{\infty}E_n$, then
+&emsp; iv>. (Secondary additivity) If $E_n,E \in \mathcal{R}$, $n=1,2,...$, and $E\subset \bigcup_{n=1}^{\infty}E_n$, then
 $$
 \mu(E) \le \sum_{n=1}^{\infty}\mu(E_n)
 $$
-&emsp; v>. If $E_n \in \mathcal{R}$, $ n=1,2,...$, $E_1\sub E_2\sub \cdot \cdot \cdot ,$ and $\bigcup_{n=1}^{\infty}E_n \in \mathcal{R}$, then
+&emsp; v>. If $E_n \in \mathcal{R}$, $ n=1,2,...$, $E_1\subset E_2\subset \cdot \cdot \cdot ,$ and $\bigcup_{n=1}^{\infty}E_n \in \mathcal{R}$, then
 $$
 \mu \left(\bigcup_{n=1}^{\infty}E_n \right) =\lim_{n\to \infty}\mu(E_n)
 $$
