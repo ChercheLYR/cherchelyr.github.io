@@ -28,7 +28,11 @@ $$
 $$
 $\forall \delta > 0$, when $|x-r_n| < \delta$, we can find $r_m$ is between $x$ and $r_n$. Due to $F(x)$ is monotonic, we have 
 $$
-|F(x)-F(r_n)|>|F(r_m)-F(r_n)|=\left |\sum_{k=1}^{\infty} \dfrac{1}{k^2}[f(r_n-r_k)-f(r_m-r_k)]\right | =C_{n,m}>0
+\begin{align}
+|F(x)-F(r_n)|&>|F(r_m)-F(r_n)|\\
+&=\left |\sum_{k=1}^{\infty} \dfrac{1}{k^2}[f(r_n-r_k)-f(r_m-r_k)]\right |\\
+&=C_{n,m}>0
+\end{align}
 $$
 Where $C_{n,m}$ is a constant(If we fix $m$ and $n$). That is $F(x)$ is discontinuous at all points $x=r_n$. 
 
@@ -60,6 +64,9 @@ $$
 \mathcal{U-L}=\sum_{j=1}^{N}{\omega_j(x)(x_j-x_{j-1})}
 $$
 
+
+
+Where
 $$
 \begin{align}
 \omega_j(x)&=\sup_{x_1,x_2\in[x_{j-1},x_{j}]}{\left|F(x_1)-F(x_2)\right|}\\
@@ -101,16 +108,16 @@ L_N=\dfrac{1}{2\pi}\int_{-\pi}^{\pi}\left|D_N(\theta)\right|d\theta
 $$
 &emsp; (a)Prove that 
 $$
-L_N \geq C\log N
+L_N \geq c\log N
 $$
-for some constant $C>0$. 
+for some constant $c>0$. 
 
 &emsp; Proof:
 
 &emsp; We calculate $L_N$ straitly:
 $$
 \begin{align}
-  \int_{-\pi }^{\pi }{\left| {D}_{N}\left( x \right) \right|dx}&=2\int_{0}^{\pi }{\left| {D}_{N}\left( x \right) \right|dx} \\
+  \int_{-\pi }^{\pi }{\left| D_N\left( x \right) \right|dx}&=2\int_{0}^{\pi }{\left| D_N\left( x \right) \right|dx} \\ 
  & =2\int_{0}^{\pi }{\left| \frac{\sin \left( N+\frac{1}{2} \right)x}{\sin \frac{x}{2}} \right|dx} \\ 
  & \ge 4\int_{0}^{N\pi }{\left| \frac{\sin x}{x} \right|dx} + O(1)\\ 
  & =4\sum\limits_{k=0}^{N-1}{\int_{k\pi }^{\left( k+1 \right)\pi }{\left| \frac{\sin x}{x} \right|dx}} + O(1)\\ 
