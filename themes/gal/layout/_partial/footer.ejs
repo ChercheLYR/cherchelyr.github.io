@@ -5,7 +5,7 @@
 </footer>
 
 <script type="text/x-mathjax-config">
-    var mathId = document.getElementById("gt-container");
+    var mathId = document.getElementsByClassName("gt-container")[0];
     MathJax.Hub.Config({
         showProcessingMessages: false,
         messageStyle: "none",
@@ -24,7 +24,7 @@
     if (mathId != null) {
         window.onload = function() {
             $(".gt-container").bind("DOMNodeInserted", function() {
-                MathJax.Hub.Queue(["Typeset", MathJax.Hub], document.getElementById("gt-container"));
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub], mathId);
             })
             MathJax.Hub.Queue(["Typeset", MathJax.Hub], mathId);
         }
