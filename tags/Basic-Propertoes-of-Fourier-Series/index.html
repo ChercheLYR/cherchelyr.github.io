@@ -593,19 +593,19 @@ mjx-container[display="true"] + br {
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/Real-Analysis/" style="font-size: 15.347697373305513px;" class="tag-cloud-link">Real Analysis</a>
+    <a href="/tags/Real-Analysis/" style="font-size: 17.897134812579303px;" class="tag-cloud-link">Real Analysis</a>
     
-    <a href="/tags/Definition/" style="font-size: 16.228451315157574px;" class="tag-cloud-link">Definition</a>
+    <a href="/tags/Definition/" style="font-size: 19.89876602676137px;" class="tag-cloud-link">Definition</a>
     
-    <a href="/tags/Theorem/" style="font-size: 11.485533437149861px;" class="tag-cloud-link">Theorem</a>
+    <a href="/tags/Theorem/" style="font-size: 9.97970345324011px;" class="tag-cloud-link">Theorem</a>
     
-    <a href="/tags/Basic-Propertoes-of-Fourier-Series/" style="font-size: 17.74392342228429px;" class="tag-cloud-link">Basic Propertoes of Fourier Series</a>
+    <a href="/tags/Basic-Propertoes-of-Fourier-Series/" style="font-size: 14.0918335957337px;" class="tag-cloud-link">Basic Propertoes of Fourier Series</a>
     
-    <a href="/tags/Dirichlet-kernel/" style="font-size: 13.184625508957893px;" class="tag-cloud-link">Dirichlet kernel</a>
+    <a href="/tags/Dirichlet-kernel/" style="font-size: 13.254554546470514px;" class="tag-cloud-link">Dirichlet kernel</a>
     
-    <a href="/tags/analysis/" style="font-size: 16.641239306586304px;" class="tag-cloud-link">analysis</a>
+    <a href="/tags/analysis/" style="font-size: 11.328452178791501px;" class="tag-cloud-link">analysis</a>
     
-    <a href="/tags/math/" style="font-size: 15.727390450104476px;" class="tag-cloud-link">math</a>
+    <a href="/tags/math/" style="font-size: 17.040343238623677px;" class="tag-cloud-link">math</a>
     
 </div>
                 
@@ -675,7 +675,7 @@ mjx-container[display="true"] + br {
 </footer>
 
 <script type="text/x-mathjax-config">
-    var mathId = document.getElementById("gt-container");
+    var mathId = document.getElementsByClassName("gt-container")[0];
     MathJax.Hub.Config({
         showProcessingMessages: false,
         messageStyle: "none",
@@ -694,7 +694,7 @@ mjx-container[display="true"] + br {
     if (mathId != null) {
         window.onload = function() {
             $(".gt-container").bind("DOMNodeInserted", function() {
-                MathJax.Hub.Queue(["Typeset", MathJax.Hub], document.getElementById("gt-container"));
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub], mathId);
             })
             MathJax.Hub.Queue(["Typeset", MathJax.Hub], mathId);
         }
