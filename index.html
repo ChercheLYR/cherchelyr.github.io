@@ -487,7 +487,7 @@ mjx-container[display="true"] + br {
             <p style="text-align: center;">
                 <a href="/2021/04/01/Measure%20on%20the%20Ring/">
                     
-                    <img src="/imgs/preview/preview2.jpg" alt="Measure on the Ring">
+                    <img src="/imgs/preview/preview9.jpg" alt="Measure on the Ring">
                 </a>
             </p>
         </div>
@@ -541,7 +541,7 @@ mjx-container[display="true"] + br {
                 <a href="/2021/03/28/Two%20problems%20of%20Chapter%202%20of%20Fourier%20Analysis/">
                     <div class="img">
                         
-                        <img src="/imgs/preview/preview3.jpg" alt="Two problems of Chapter 2">
+                        <img src="/imgs/preview/preview2.jpg" alt="Two problems of Chapter 2">
                     </div>
                     <div class="info">
                         
@@ -584,7 +584,7 @@ mjx-container[display="true"] + br {
             <p style="text-align: center;">
                 <a href="/2021/03/28/Two%20problems%20of%20Chapter%202%20of%20Fourier%20Analysis/">
                     
-                    <img src="/imgs/preview/preview8.jpg" alt="Two problems of Chapter 2">
+                    <img src="/imgs/preview/preview1.jpg" alt="Two problems of Chapter 2">
                 </a>
             </p>
         </div>
@@ -636,7 +636,7 @@ mjx-container[display="true"] + br {
                 <a href="/2021/03/24/test-md/">
                     <div class="img">
                         
-                        <img src="/imgs/preview/preview4.jpg" alt="test.md">
+                        <img src="/imgs/preview/preview5.jpg" alt="test.md">
                     </div>
                     <div class="info">
                         
@@ -677,7 +677,7 @@ mjx-container[display="true"] + br {
             <p style="text-align: center;">
                 <a href="/2021/03/24/test-md/">
                     
-                    <img src="/imgs/preview/preview3.jpg" alt="test.md">
+                    <img src="/imgs/preview/preview7.jpg" alt="test.md">
                 </a>
             </p>
         </div>
@@ -774,7 +774,7 @@ mjx-container[display="true"] + br {
             <p style="text-align: center;">
                 <a href="/2021/03/24/%E7%9A%AE%E5%8D%A1%E5%AD%98%E5%9C%A8%E5%94%AF%E4%B8%80%E6%80%A7%E5%AE%9A%E7%90%86/">
                     
-                    <img src="/imgs/preview/preview10.jpg" alt="常微分方程解的存在唯一性定理">
+                    <img src="/imgs/preview/preview8.jpg" alt="常微分方程解的存在唯一性定理">
                 </a>
             </p>
         </div>
@@ -819,7 +819,7 @@ mjx-container[display="true"] + br {
                 <a href="/2021/03/23/hello-world/">
                     <div class="img">
                         
-                        <img src="/imgs/preview/preview7.jpg" alt="Hello World">
+                        <img src="/imgs/preview/preview8.jpg" alt="Hello World">
                     </div>
                     <div class="info">
                         
@@ -1073,19 +1073,19 @@ mjx-container[display="true"] + br {
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/Real-Analysis/" style="font-size: 12.76876756102509px;" class="tag-cloud-link">Real Analysis</a>
+    <a href="/tags/Real-Analysis/" style="font-size: 8.894489734251025px;" class="tag-cloud-link">Real Analysis</a>
     
-    <a href="/tags/Definition/" style="font-size: 15.387989603803675px;" class="tag-cloud-link">Definition</a>
+    <a href="/tags/Definition/" style="font-size: 19.037936392334537px;" class="tag-cloud-link">Definition</a>
     
-    <a href="/tags/Theorem/" style="font-size: 12.814606122129135px;" class="tag-cloud-link">Theorem</a>
+    <a href="/tags/Theorem/" style="font-size: 16.803207775388586px;" class="tag-cloud-link">Theorem</a>
     
-    <a href="/tags/Basic-Propertoes-of-Fourier-Series/" style="font-size: 18.60253348028146px;" class="tag-cloud-link">Basic Propertoes of Fourier Series</a>
+    <a href="/tags/Basic-Propertoes-of-Fourier-Series/" style="font-size: 9.091218873579116px;" class="tag-cloud-link">Basic Propertoes of Fourier Series</a>
     
-    <a href="/tags/Dirichlet-kernel/" style="font-size: 10.576726956565047px;" class="tag-cloud-link">Dirichlet kernel</a>
+    <a href="/tags/Dirichlet-kernel/" style="font-size: 13.690228227148044px;" class="tag-cloud-link">Dirichlet kernel</a>
     
-    <a href="/tags/analysis/" style="font-size: 17.382538957497022px;" class="tag-cloud-link">analysis</a>
+    <a href="/tags/analysis/" style="font-size: 16.305824095804972px;" class="tag-cloud-link">analysis</a>
     
-    <a href="/tags/math/" style="font-size: 11.16841517357086px;" class="tag-cloud-link">math</a>
+    <a href="/tags/math/" style="font-size: 13.977501942695323px;" class="tag-cloud-link">math</a>
     
 </div>
                 
@@ -1154,10 +1154,40 @@ mjx-container[display="true"] + br {
     </div>
 </footer>
 
+<script type="text/x-mathjax-config">
+    var mathId = document.getElementById("gitalk-container");
+    MathJax.Hub.Config({
+        showProcessingMessages: false,
+        messageStyle: "none",
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath:  [ ["$", "$"] ],
+            displayMath: [ ["$$","$$"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'a'],
+            ignoreClass:"comment-content"
+        },
+        "HTML-CSS": {
+            availableFonts: ["STIX","TeX"]
+        }
+    });
+    if (mathId != null) {
+        window.onload = function() {
+            $(".gt-container").bind("DOMNodeInserted", function() {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub], document.getElementById("gitalk-container"));
+            })
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub], mathId);
+        }
+    }
+</script>
+<script src="/js/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async="async">
+</script>
+
 <!-- 回到顶端 -->
 <div id="gal-gotop">
     <i class="fa fa-angle-up"></i>
 </div>
+
     
 </body>
 
