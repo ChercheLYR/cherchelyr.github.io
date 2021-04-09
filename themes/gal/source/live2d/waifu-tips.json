@@ -105,10 +105,10 @@
 		"selector": ".reward-container",
 		"text": ["我是不是棒棒哒～快给我点赞吧！", "要打赏我嘛？好期待啊～", "主人最近在吃土呢，很辛苦的样子，给他一些钱钱吧～"]
 	}, {
-		"selector": "#wechat",
+		"selector": "#WeChat",
 		"text": ["这是我的微信二维码～"]
 	}, {
-		"selector": "#alipay",
+		"selector": "#Alipay",
 		"text": ["这是我的支付宝哦！"]
 	}, {
 		"selector": "#bitcoin",
