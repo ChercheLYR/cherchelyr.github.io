@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://cherchelyr.github.io/music/index.html</loc>
+    <loc>https://cherchelyr.github.io/fcircle/index.html</loc>
     
-    <lastmod>2023-12-24</lastmod>
+    <lastmod>2023-12-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherchelyr.github.io/link/index.html</loc>
+    
+    <lastmod>2023-12-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -12,6 +21,15 @@
   
   <url>
     <loc>https://cherchelyr.github.io/tags/index.html</loc>
+    
+    <lastmod>2023-12-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cherchelyr.github.io/music/index.html</loc>
     
     <lastmod>2023-12-24</lastmod>
     
@@ -30,15 +48,6 @@
   
   <url>
     <loc>https://cherchelyr.github.io/categories/index.html</loc>
-    
-    <lastmod>2023-12-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cherchelyr.github.io/link/index.html</loc>
     
     <lastmod>2023-12-24</lastmod>
     
@@ -68,15 +77,6 @@
     <loc>https://cherchelyr.github.io/posts/f71d.html</loc>
     
     <lastmod>2023-12-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cherchelyr.github.io/fcircle/index.html</loc>
-    
-    <lastmod>2023-12-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
