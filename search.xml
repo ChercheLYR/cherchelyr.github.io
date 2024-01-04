@@ -17,6 +17,33 @@
     
     
     <entry>
+      <title>Test</title>
+      <link href="/posts/92ae.html"/>
+      <url>/posts/92ae.html</url>
+      
+        <content type="html"><![CDATA[<p>Test</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Number Theory </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Prime factorization </tag>
+            
+            <tag> Euler&#39;s Formula </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一个因子之和的积分表达</title>
       <link href="/posts/92ae.html"/>
       <url>/posts/92ae.html</url>
