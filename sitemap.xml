@@ -110,6 +110,15 @@
   </url>
   
   <url>
+    <loc>https://cherchelyr.github.io/404/index.html</loc>
+    
+    <lastmod>2024-01-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://cherchelyr.github.io/about/index.html</loc>
     
     <lastmod>2024-01-13</lastmod>
@@ -138,15 +147,6 @@
   
   <url>
     <loc>https://cherchelyr.github.io/fcircle/index.html</loc>
-    
-    <lastmod>2024-01-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cherchelyr.github.io/404/index.html</loc>
     
     <lastmod>2024-01-13</lastmod>
     
